@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>paymeee.org</title>
+</head>
+
+<body>
+    <nav>
+        <div class="main-wrapper">
+            <div id="menu" class="menu"> <img href src="img/logo2.png" alt="main logo">
+                <ul class="menu-toggle">
+                    <li><a href="#">Home</a></li>
+
+                    <li><a href="#">contact</a></li>
+                </ul>
+            </div>
+    </nav>
+    <div class="content row">
+        <div class="text col-3 ">
+            <h1>
+                Our Charity, Our World
+            </h1>
+            <p class="right"> SAL (Save A Life) is an organization set up to provide help and raise money for those in need.We are proudly non-profit. We work hard to protect others from harm and help them access quality education and health services.
+            </p>
+
+            <form id="paymentForm">
+                <input type="number" id="amount" placeholder="$10" value="" required>
+                </br>
+                </br>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email-address" required />
+                </div>
+                </br>
+                <!-- <div class="form-group">
+                    <label for="amount">Amount</label>
+                    <input type="tel" id="amount" required />
+                </div> -->
+                <div class="form-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" />
+                </div>
+                </br>
+                <div class="form-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" />
+                </div>
+
+                <button class="button" type="submit" onclick="payWithPaystack()"> donate wth us
+</button>
+                <!-- <div class="form-submit button">
+                    <button type="submit" onclick="payWithPaystack()">  </button>
+                </div> -->
+            </form>
+
+
+
+            <!--
+            <button class="button"> <a href="./payment_form.html"> donate wth us </a></button> -->
+        </div>
+        <!-- <div class="image"><img src="img/Picture2.png" alt=""></div> -->
+        <div class="column-wrapper">
+
+
+        </div>
+    </div>
+
+
+    </div>
+
+    </div>
+    </div>
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+    <script src="payment.js"></script>
+</body>
+
+</html>
